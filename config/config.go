@@ -11,8 +11,8 @@ import (
 type Specification struct {
 	Port           string `default:"8080" envconfig:"PORT"`
 	Polling        int    `default:"43200" envconfig:"POLL_INTERVAL_SEC"` // 43200 seconds = 12 hours
-	VersionsAPIURL string `envconfig:"VERSIONS_API_URL" default:"https://versions-staging.deis.com"`
-	DoctorAPIURL   string `envconfig:"DOCTOR_API_URL" default:"https://doctor-staging.deis.com"`
+	VersionsAPIURL string `envconfig:"VERSIONS_API_URL" default:"https://versions-staging.teamhephy.info"`
+	DoctorAPIURL   string `envconfig:"DOCTOR_API_URL" default:"https://doctor-staging.teamhephy.info"`
 	APIVersion     string `envconfig:"API_VERSION" default:"v3"`
 	CheckVersions  bool   `default:"true" envconfig:"CHECK_VERSIONS"`
 	DeisNamespace  string `default:"deis" envconfig:"DEIS_NAMESPACE"`
